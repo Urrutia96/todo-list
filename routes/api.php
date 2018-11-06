@@ -17,6 +17,6 @@ use App\User;
     return $request->user();
 }); */
 
-Route::get('/user', function (Request $request) {
-    return User::all();
-});
+Route::get('/todos', 'Api\TodoController@todos');
+Route::post('/todos','Api\TodoController@store');
+Route::get('/todos/{id}/ready', 'Api\TodoController@ready');
