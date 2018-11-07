@@ -23,7 +23,8 @@ class Todo extends Model
     public function toArray(){
         return [
             'todo'=> $this->todo,
-            'ready'=> $this->ready
+            'ready'=> $this->ready,
+            'id' =>$this->id
         ];
     }
 }

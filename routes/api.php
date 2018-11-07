@@ -18,5 +18,5 @@ use App\User;
 }); */
 
 Route::get('/todos', 'Api\TodoController@todos');
-Route::post('/todos','Api\TodoController@store');
+Route::post('/todos/new','Api\TodoController@store');
 Route::get('/todos/{id}/ready', 'Api\TodoController@ready');

@@ -16,7 +16,7 @@ class TodoController extends Controller
      * @return json
      */
     public function todos(Request $request){
-        return Todo::paginate(10)->toArray();
+        return Todo::paginate(50)->toArray();
     }
 
     /**
